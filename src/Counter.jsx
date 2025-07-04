@@ -15,6 +15,18 @@ const Counter = ({ count, data }) => {
   useEffect(() => {
     handleData();
   }, [data]);
+
+  useEffect(() => {
+    console.log("mounting phase only");
+  }, []);
+
+  // unmounting phase
+  useEffect(() => {
+    return () => {
+      console.log("unmounting phase");
+    };
+  }, []);
+
   return (
     <div>
       <h1>Counter Value {count}</h1>

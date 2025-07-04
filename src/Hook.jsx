@@ -8,18 +8,18 @@ function Hook() {
     callOnce();
   }, []);
 
-//   function counterFunction() {
-//   console.log("Counter function called", count);
-// }
+  //   function counterFunction() {
+  //   console.log("Counter function called", count);
+  // }
 
-useEffect(() => {
-  console.log("Counter function called", count);
-}, [count]);
+  useEffect(() => {
+    console.log("Counter function called", count);
+  }, [count]);
 
-function callOnce() {
-  console.log("callOnce function called");
-}
- 
+  function callOnce() {
+    console.log("callOnce function called");
+  }
+
   return (
     <div>
       <h1>useEffect Hook</h1>
